@@ -41,10 +41,6 @@ in
     options asus_wmi fnlock_default=0
   '';
 
-  # TEMPORARY VM INSTALLATION
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
   # Firmware idling bug fix
   boot.kernelParams = [ "intel_idle.max_cstate=2" ];
 
@@ -146,6 +142,7 @@ in
     enable = true;
     defaultEditor = true;
   };
+  services.sslh.enable = true;
 
   # Dark mode
   programs.dconf.enable = true;
