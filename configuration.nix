@@ -44,6 +44,9 @@ in
   # Firmware idling bug fix
   boot.kernelParams = [ "intel_idle.max_cstate=2" ];
 
+  # Enable hhardware graphics acceleration
+  hardware.graphics.enable = true;
+
   programs.noctalia-greeter = {
     enable = true;
     settings = {
