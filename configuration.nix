@@ -238,6 +238,7 @@ in
     inputs.areofyl-fetch.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.noctalia.packages."${pkgs.stdenv.hostPlatform.system}".default
     discord-ptb
+    rsync
   ];
 
   # Fonts
